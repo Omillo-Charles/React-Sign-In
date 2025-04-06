@@ -29,6 +29,9 @@ const Form = () => {
         <input type="submit" value="Register" />
       </div>
 
+        <div className="login">
+            <p>Already have an an account? <span className='loginSpan'>login.</span></p>
+        </div>
       <div className="auth">
         <div className="google">
         <i class="bi bi-google"> Google</i>

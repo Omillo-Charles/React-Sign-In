@@ -117,3 +117,35 @@ div.facebook{
     border: 2px solid whitesmoke;
     cursor: pointer;
 }
+
+div.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.login span{
+    text-decoration: underline;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+div.login span:hover{
+    color: beige;
+    transform: scale(1.2rem);
+    text-decoration: none;
+}
+
+div.google:hover{
+    border: none;
+}
+
+div.facebook:hover{
+    border: none;
+}
+
+div.password i{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
