@@ -10,6 +10,12 @@ div.Form{
     flex-direction: column;
 }
 
+div.Form form{
+    box-shadow: inset 0 0 8px whitesmoke;
+    padding: 2rem;
+    border-radius: 16px;
+}
+
 div.name{
     position: relative;
 }
@@ -33,6 +39,11 @@ form input{
     border-radius: 8px;
     border: 2px solid whitesmoke;
     box-shadow: inset 0 0 4px black;
+    transition: 0.4s ease;
+}
+
+form input:focus{
+    box-shadow: inset 0 0 12px black;
 }
 
 div.email{
@@ -59,6 +70,13 @@ div.password label{
     font-size: 1.2rem;
 }
 
+div.password i{
+    position: absolute;
+    right: 0.6rem;
+    top: 1.3rem;
+    color: black;
+    font-size: 1.2rem;
+}
 div.register input{
     width: 12rem;
     margin: 0 auto;
@@ -71,4 +89,31 @@ div.register input{
 
 div.register input:hover{
     box-shadow: inset 0 0 16px black;
+}
+
+div.auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem auto;
+}
+
+div.google{
+    padding: 0.8rem;
+    background: -webkit-linear-gradient(to right, red, green,yellow);
+    background: linear-gradient(to right, red,green,yellow);
+    margin: 0.8rem;
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+}
+
+div.facebook{
+    padding: 0.8rem;
+    background: linear-gradient(to right, blue,white);
+    margin: 0.8rem;
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
 }

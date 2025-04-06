@@ -1,12 +1,14 @@
 import React from 'react'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './Form.css'
 
 const Form = () => {
 
   return (
     <div className='Form'>
-        <h2>REGISTER TO CHAMAA</h2>
+
       <form action="#">
+      <h2>REGISTER TO CHAMAA</h2>
       <div className="name">
         <input type="text" id='name' autoComplete='off'/>
         <label htmlFor="name">Your Name</label>
@@ -20,10 +22,21 @@ const Form = () => {
       <div className="password">
         <input type="password" name="password" id="password" autoComplete='off' />
         <label htmlFor="password">Password</label>
+        <i class="bi bi-eye-slash"></i>
       </div>
 
       <div className="register">
         <input type="submit" value="Register" />
+      </div>
+
+      <div className="auth">
+        <div className="google">
+        <i class="bi bi-google"> Google</i>
+        </div>
+
+        <div className="facebook">
+        <i class="bi bi-facebook"> Facebook</i>
+        </div>
       </div>
       </form>
     </div>
